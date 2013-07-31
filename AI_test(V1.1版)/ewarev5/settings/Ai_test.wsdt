@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>Ai_test/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>242</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+    <Build><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>915</ColumnWidth1><ColumnWidth2>244</ColumnWidth2><ColumnWidth3>61</ColumnWidth3></Build><Debug-Log><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1221</ColumnWidth1></Debug-Log><TerminalIO/><Find-in-Files><ColumnWidth0>438</ColumnWidth0><ColumnWidth1>62</ColumnWidth1><ColumnWidth2>751</ColumnWidth2></Find-in-Files></Static>
+    <Windows>
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-32479-22179</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>Ai_test</ExpandedNode><ExpandedNode>Ai_test/bsp</ExpandedNode><ExpandedNode>Ai_test/fft</ExpandedNode><ExpandedNode>Ai_test/user</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3><Tabs><Tab><Identity>TabID-8661-22421</Identity><TabName>Build</TabName><Factory>Build</Factory><Session/></Tab><Tab><Identity>TabID-25966-5162</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab><Tab><Identity>TabID-17146-25413</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\user\main.c</Filename><XPos>0</XPos><YPos>30</YPos><SelStart>1268</SelStart><SelEnd>1268</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\BSP\dft.c</Filename><XPos>0</XPos><YPos>324</YPos><SelStart>11095</SelStart><SelEnd>11095</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\BSP\adc_calc.c</Filename><XPos>0</XPos><YPos>47</YPos><SelStart>1298</SelStart><SelEnd>1298</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\BSP\bsp.c</Filename><XPos>0</XPos><YPos>347</YPos><SelStart>13479</SelStart><SelEnd>13479</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\BSP\BaseBus_Protocol.c</Filename><XPos>0</XPos><YPos>200</YPos><SelStart>4973</SelStart><SelEnd>4973</SelEnd></Tab><ActiveTab>4</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\BSP\I2CRoutines.c</Filename><XPos>0</XPos><YPos>134</YPos><SelStart>3684</SelStart><SelEnd>3684</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\BSP\I2CRoutines.h</Filename><XPos>0</XPos><YPos>86</YPos><SelStart>3444</SelStart><SelEnd>3444</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\BSP\bsp.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>245</SelStart><SelEnd>245</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\BSP\BaseBus_Protocol.h</Filename><XPos>0</XPos><YPos>4</YPos><SelStart>434</SelStart><SelEnd>434</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\user\Realtimedb.c</Filename><XPos>0</XPos><YPos>58</YPos><SelStart>1676</SelStart><SelEnd>1676</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\user\Realtimedb.h</Filename><XPos>0</XPos><YPos>2</YPos><SelStart>227</SelStart><SelEnd>227</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-01b11690><key>iaridepm.enu1</key></Toolbar-01b11690></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>652</Bottom><Right>316</Right><x>-2</x><y>-2</y><xscreen>158</xscreen><yscreen>163</yscreen><sizeHorzCX>98750</sizeHorzCX><sizeHorzCY>189977</sizeHorzCY><sizeVertCX>198750</sizeVertCX><sizeVertCY>762238</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>161</Bottom><Right>1602</Right><x>-2</x><y>-2</y><xscreen>1604</xscreen><yscreen>163</yscreen><sizeHorzCX>1002500</sizeHorzCX><sizeHorzCY>189977</sizeHorzCY><sizeVertCX>98750</sizeVertCX><sizeVertCY>189977</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+
