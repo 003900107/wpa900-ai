@@ -11,7 +11,7 @@ ActionState=1
 Enabled=0
 ShowSource=1
 [DebugChecksum]
-Checksum=1428019217
+Checksum=-190649295
 [DisAssemblyWindow]
 NumStates=_ 1
 State 1=_ 1
@@ -103,10 +103,14 @@ Bp0=_ "STD_CODE" "{E:\My Labs_4working\WPU\AI_test\BSP\adc_calc.c}.112.1@1" 0 0 
 Bp1=_ "STD_CODE" "{E:\My Labs_4working\WPA900\AI_test\BSP\BaseBus_Protocol.c}.95.1@1" 0 0 0 0 "" 0 "" 0
 Bp2=_ "STD_CODE" "{E:\My Labs_4working\WPA900\AI_test\BSP\BaseBus_Protocol.c}.108.3@1" 0 0 0 0 "" 0 "" 0
 Bp3=_ "STD_CODE" "{E:\My Labs_4working\WPA900\AI_test\BSP\BaseBus_Protocol.c}.155.6@1" 0 0 0 0 "" 0 "" 0
-Bp4=_ "STD_CODE" "{E:\yun\百度云\github\AI_test(V1.1版)\user\Realtimedb.c}.70.5@1" 1 0 0 0 "" 0 "" 0
-Bp5=_ "STD_CODE" "{E:\yun\百度云\github\AI_test(V1.1版)\BSP\BaseBus_Protocol.c}.229.5@1" 1 0 0 0 "" 0 "" 0
-Bp6=_ "STD_CODE" "{E:\yun\百度云\github\AI_test(V1.1版)\BSP\BaseBus_Protocol.c}.85.3@1" 1 0 0 0 "" 0 "" 0
-Count=7
+Bp4=_ "STD_CODE" "{E:\yun\百度云\github\AI_test(V1.1版)\user\Realtimedb.c}.70.5@1" 0 0 0 0 "" 0 "" 0
+Bp5=_ "STD_CODE" "{E:\yun\百度云\github\AI_test(V1.1版)\BSP\BaseBus_Protocol.c}.229.5@1" 0 0 0 0 "" 0 "" 0
+Bp6=_ "STD_CODE" "{E:\yun\百度云\github\AI_test(V1.1版)\BSP\BaseBus_Protocol.c}.85.3@1" 0 0 0 0 "" 0 "" 0
+Bp7=_ "STD_CODE" "{E:\yun\百度云\github\wpa900-ai\AI_test(V1.1版)\BSP\I2CRoutines.c}.232.5@1" 1 0 0 0 "" 0 "" 0
+Bp8=_ "STD_CODE" "{E:\yun\百度云\github\wpa900-ai\AI_test(V1.1版)\user\stm32f10x_it.c}.219.3@1" 1 0 0 0 "" 0 "" 0
+Bp9=_ "STD_CODE" "{E:\yun\百度云\github\wpa900-ai\AI_test(V1.1版)\BSP\I2CRoutines.c}.217.5@1" 1 0 0 0 "" 0 "" 0
+Bp10=_ "STD_CODE" "{E:\yun\百度云\github\wpa900-ai\AI_test(V1.1版)\BSP\BaseBus_Protocol.c}.242.5@1" 1 0 0 0 "" 0 "" 0
+Count=11
 [Aliases]
 A0=_ "E:\My Labs_4working\AI_test\user\main.c" ""
 A1=_ "E:\My Labs_4working\AI_test\user\stm32f10x_it.c" ""

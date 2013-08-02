@@ -55,7 +55,8 @@ int main(void)
   
   GPIO_Configuration();
   GPIO_WriteBit(ALARM_LED,  Bit_SET);
-  GPIO_WriteBit(RUNSTAT_LED,  Bit_SET);  
+  GPIO_WriteBit(RUNSTAT_LED,  Bit_SET); 
+  GPIO_WriteBit(I2C_RESET_LED,  Bit_SET);  
   
   ADC_Configuration();
   
@@ -87,20 +88,23 @@ int main(void)
     if(63==PeriodCycle_Index)
     {
       TOTAL_MEASURE(&meas);
+      
       SequenceFilter_2(&meas);
+      
       SequenceFilter_0(&meas);
+      
       ValueScaling(MeaTab,&meas);
-#ifdef WATCHDOG
-      WDGFeeding();
-#endif
       
       I2CHW_Maintain();		
       
-      //test
+#ifdef WATCHDOG
+      WDGFeeding();
+#endif
+       
+      //run light
       if(RunStatturn++&0x01)
       {
         GPIO_WriteBit(RUNSTAT_LED,  Bit_RESET);
-        
       }
       else
       {
@@ -115,6 +119,7 @@ int main(void)
     //MeaTab[0]=Ua_Channel.am*1000;
     //MeaTab[1]=Ua_Channel.zero ;
     // }
+    
     BusCalling_Process(); 
   }
   

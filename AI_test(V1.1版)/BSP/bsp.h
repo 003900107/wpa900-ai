@@ -6,8 +6,9 @@
 #include "BaseBus_Protocol.h"
 #include "Realtimedb.h"						
 
-#define ALARM_LED    GPIOD, GPIO_Pin_9
-#define RUNSTAT_LED  GPIOD, GPIO_Pin_8
+#define ALARM_LED     GPIOD, GPIO_Pin_9
+#define RUNSTAT_LED   GPIOD, GPIO_Pin_8
+#define I2C_RESET_LED GPIOB, GPIO_Pin_15
 
 
 

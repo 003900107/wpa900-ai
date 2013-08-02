@@ -164,7 +164,8 @@ void _I2C1_EV_IRQHandler(void)
       RxBuffer[Rx_Idx++] = I2C1->DR;
       SR1Register = 0;
       SR2Register = 0;
-      if(8==Rx_Idx) SlaveReceptionComplete = 1;
+      if(8==Rx_Idx) 
+        SlaveReceptionComplete = 1;
       
     }
     
@@ -174,9 +175,15 @@ void _I2C1_EV_IRQHandler(void)
       I2C1->CR1 |= CR1_PE_Set;
       SR1Register = 0;
       SR2Register = 0;
-      
     }
   } /* End slave mode */
+  
+  //添加异常处理 tyh 20130731
+  if( (SR1Register != 0)&&(SR2Register != 0) )
+  {
+    //复位I2C
+    I2CHW_Reset();
+  }  
 }
 #endif
 
@@ -218,6 +225,13 @@ void _I2C1_ER_IRQHandler(void)
     SR1Register = 0;
   }
   
+  //添加异常处理 tyh 20130731
+  if(SR1Register != 0)
+  {
+    //复位I2C
+    I2CHW_Reset();
+  }  
+  
 //  /*bus busy*/
 //  if(SR2Register & 0x0002)
 //  {
@@ -227,7 +241,6 @@ void _I2C1_ER_IRQHandler(void)
 
 void _DMA1_Channel7_IRQHandler(void)
 {
-  
   if(DMA_GetITStatus(DMA1_IT_TC7))
   {
     DMA_ClearITPendingBit(DMA1_IT_GL7);

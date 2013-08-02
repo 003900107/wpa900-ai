@@ -226,10 +226,10 @@ void RCC_Configuration(void)
   /* Enable ADC1, ADC2, ADC3 and GPIOC clocks */
   RCC_APB1PeriphClockCmd(RCC_APB1Periph_I2C1|RCC_APB1Periph_TIM2|RCC_APB1Periph_TIM4, ENABLE);
   
-  RCC_APB2PeriphClockCmd(RCC_APB2Periph_ADC1 | RCC_APB2Periph_ADC2 |
-                         RCC_APB2Periph_AFIO | RCC_APB2Periph_GPIOC|
-                           RCC_APB2Periph_GPIOA| RCC_APB2Periph_GPIOB| RCC_APB2Periph_GPIOD|
-                             RCC_APB2Periph_ADC3 , ENABLE);
+  RCC_APB2PeriphClockCmd(RCC_APB2Periph_ADC1 | RCC_APB2Periph_ADC2 | RCC_APB2Periph_ADC3 | 
+                         RCC_APB2Periph_GPIOA | RCC_APB2Periph_GPIOB | 
+                           RCC_APB2Periph_GPIOC | RCC_APB2Periph_GPIOD | 
+                             RCC_APB2Periph_AFIO , ENABLE);
 }
 
 /**
@@ -257,6 +257,11 @@ void GPIO_Configuration(void)
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
   GPIO_Init(GPIOD, &GPIO_InitStructure);  
+
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_15;
+  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
+  GPIO_Init(GPIOB, &GPIO_InitStructure);  
 }
 
 
@@ -300,13 +305,12 @@ void NVIC_Configuration(void)
   NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
   NVIC_Init(&NVIC_InitStructure);
 #endif
-  //
-  //	  NVIC_InitStructure.NVIC_IRQChannel = DMA1_Channel3_IRQn;
-  //	  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority =1;
-  //	  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 2;
-  //	  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
-  //	  NVIC_Init(&NVIC_InitStructure);
-  
+
+  //NVIC_InitStructure.NVIC_IRQChannel = DMA1_Channel3_IRQn;
+  //NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority =1;
+  //NVIC_InitStructure.NVIC_IRQChannelSubPriority = 2;
+  //NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+  //NVIC_Init(&NVIC_InitStructure);
 }
 
 

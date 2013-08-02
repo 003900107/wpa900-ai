@@ -166,6 +166,7 @@ bool AiCalibration(void)
 void BusCalling_Process(void)
 {
   bool result=0;
+  
   if(SlaveReceptionComplete)
   {
     switch(RxBuffer[2])
@@ -177,13 +178,16 @@ void BusCalling_Process(void)
       //  COEF_INTFLAG=0x01;
       //}
       break;
+      
     case AI_CALB:
       if(AI_CALB==RxBuffer[3])
         result=AiCalibration();
       break;
+      
     default:
       break;	          
     }	
+    
     SlaveReceptionComplete=0; 
     memset(RxBuffer,0,8);
   }
@@ -215,6 +219,7 @@ void I2CHW_Maintain(void)
       counter = 0;
       SetErrorCount(0);
     }
+    GPIO_WriteBit(I2C_RESET_LED,  Bit_SET); 
   }
   
   //tyh:20130730 i2c在指定次数内没有复位成功, 重启AI板
@@ -235,6 +240,8 @@ void I2CHW_Maintain(void)
     I2C_Cmd(I2C1,DISABLE);
     I2C_Cmd(I2C1,ENABLE);
     I2CHW_Reset();
+    
+    GPIO_WriteBit(I2C_RESET_LED,  Bit_RESET); 
     
     //tyh:20130730 总线复位次数加"1"，
     SetErrorCount( GetErrorCount()+1 );
